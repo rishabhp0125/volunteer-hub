@@ -1,0 +1,40 @@
+.Header {
+    position: relative;
+    margin:0;
+    background-img: url('../pics/random.png')
+}
+.img-fluid {
+height:85vh;
+width:100%
+}
+.Header .HeaderOverlay{
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+}
+
+.Header .HeaderContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+
+.Header .header p {
+    font-size: 11px
+}
+
+.VolunteerButton {
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.Title {
+    color: #fff;
+    font-size: 50px;
+}

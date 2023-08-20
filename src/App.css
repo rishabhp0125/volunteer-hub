@@ -1,38 +1,108 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    text-align: center;
+    padding: 10px;
+   display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    font-family: Verdana;
+    background: #edd7cc;
+    color: #d47698;
   }
-}
+  .left-side{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    display:flex;
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+  .climate {
+    width:100%;
   }
-}
+  .filter-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #05386B;
+  }
+  
+  .filter-box h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .filter-box button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    color: #05386B;
+  }
+  
+  .filter-box button:hover {
+    background-color: #ab3b61;
+    color: #fff;
+  }
+  
+  .filter-box button.active {
+    background-color: #ab3b61;
+    color: #fff;
+  }
+  
+  .organization-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    width: 100%; 
+  }
+  
+  .organization-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 20px; 
+    border-radius: 7.5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #fff;
+    color: #05386B
+  }
+  
+  .organization-card img {
+    max-width: 200px; 
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .organization-card-content {
+    flex: 1;
+  }
+  
+  button {
+    background-color: #05386B;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+
+  .Map {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-family: Verdana;
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    background: #edd7cc;
+  }
